@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Store - Cart</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <div class="logo">🍎 Fruit Store</div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <a href="cart.html" class="cart active">🛒 Cart <span class="cart-count-badge">(0)</span></a>
+    </nav>
+</header>
+
+<section class="page-header">
+    <p>YOUR SELECTION</p>
+    <h1>Shopping Cart</h1>
+    <span>Review your fruits before ordering.</span>
+</section>
+
+<section class="section">
+    <div class="cart-box">
+        <div id="cart-items">
+            <!-- Items loaded dynamically via JS -->
+        </div>
+
+        <hr>
+
+        <div class="cart-total-row">
+            <span>Total:</span>
+            <span id="cart-total">$0.00</span>
+        </div>
+
+        <div class="cart-actions">
+            <button id="clear-cart-btn" class="button button-outline">Clear Cart</button>
+            <a href="contact.html" class="button">Proceed to Checkout</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <h3>🍎 Fruit Store</h3>
+    <p>Fresh fruits for a fresh life.</p>
+    <small>© 2026 Fruit Store</small>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
