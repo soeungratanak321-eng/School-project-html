@@ -1,0 +1,180 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fafaf7;
+    color: #333;
+}
+
+/* Header & Navigation */
+header {
+    background: white;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    width: 84%;
+    margin: auto;
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: #2e7d32;
+}
+
+.cart {
+    text-decoration: none;
+    color: white;
+    background: #2e7d32;
+    padding: 10px 18px;
+    border-radius: 8px;
+}
+
+/* Page Header Banner (Shared across Shop, Contact, Cart) */
+.page-header {
+    text-align: center;
+    padding: 80px 20px;
+    background: #eef7ec;
+}
+
+.page-header p {
+    color: #e67e22;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.page-header h1 {
+    font-size: 48px;
+    color: #2e7d32;
+    margin: 8px 0;
+}
+
+.page-header span {
+    color: #666;
+}
+
+/* General Layout Section */
+.section {
+    width: 84%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading p {
+    color: #e67e22;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    font-size: 36px;
+    color: #2e7d32;
+    margin-top: 5px;
+}
+
+/* Common Buttons */
+.button {
+    display: inline-block;
+    text-decoration: none;
+    background: #2e7d32;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #1f5e24;
+}
+
+.button-outline {
+    background: transparent;
+    color: #2e7d32;
+    border: 2px solid #2e7d32;
+}
+
+.button-outline:hover {
+    background: #2e7d32;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background: #1d3b22;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+footer h3 {
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+footer p {
+    color: #d7e5d8;
+    margin-bottom: 12px;
+}
+
+footer small {
+    color: #b9cbb9;
+}
+
+/* Navigation Responsiveness */
+@media (max-width: 650px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 18px 0;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .page-header h1 {
+        font-size: 38px;
+    }
+}
